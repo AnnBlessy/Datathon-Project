@@ -134,7 +134,7 @@ print(classification_report1)
 ![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/8aeb0fdb-32d7-4ed1-82e6-ed8ba619ca82)
 ![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/2a86b558-f07a-4eab-9173-c23691d6c577)
 
-# Linear Regression Model for Patients 
+# Linear Regression Model for Patient health camp record analysis 
 
 ## Importing necessary libraries 
 ```
