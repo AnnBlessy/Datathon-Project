@@ -85,6 +85,7 @@ y = data1["Disease"]
 print("data-status")
 y
 ```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/8f744c36-c50d-4e36-8341-ef2b6d8426be)
 
 ```
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
@@ -94,19 +95,32 @@ lr.fit(x_train,y_train)
 y_pred = lr.predict(x_test)
 print(" y_prediction array")
 y_pred
+```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/795e44bf-13bc-4cae-8729-446c77618697)
 
+```
 from sklearn.metrics import accuracy_score
 accuracy = accuracy_score(y_test,y_pred)
 print("Accuracy value")
 accuracy
+```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/a7e0eb51-84b2-4052-a350-df9aa5834478)
 
+```
 from sklearn.metrics import confusion_matrix
 confusion = confusion_matrix(y_test,y_pred)
 print("Confusion array")
 confusion
+```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/fc393c0c-8d94-44ee-888c-bc1df8c145b4)
 
+```
 from sklearn.metrics import classification_report
 classification_report1 = classification_report(y_test,y_pred)
 print("Classification report")
 print(classification_report1)
 ```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/8aeb0fdb-32d7-4ed1-82e6-ed8ba619ca82)
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/2a86b558-f07a-4eab-9173-c23691d6c577)
+
+
