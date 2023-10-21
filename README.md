@@ -35,6 +35,8 @@ data1
 sev_df = pd.read_csv('PROJECT/Symptom-severity.csv')
 sev_df
 ```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/e19eb352-271d-417b-9cc8-d41d6e88805c)
+
 ```
 x = data1.iloc[:,:-1]
 print("Data-status")
@@ -43,7 +45,13 @@ print(x)
 y = data1["Disease"]
 print("data-status")
 y
+```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/84af8d1e-ccb5-44bc-a5e0-49d6aa001fc2)
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/43e7dd96-3081-4e67-9c9f-0323eec34aa0)
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/5f4da218-d102-415f-bc3c-279c969097a1)
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/8efc4e6e-a784-4cd3-8dde-f2fb73224cb9)
 
+```
 le = LabelEncoder()
 data1["Disease"] = le.fit_transform(data1["Disease"])
 data1["Symptom_1"] = le.fit_transform(data1["Symptom_1"])
@@ -65,7 +73,10 @@ data1["Symptom_16"] = le.fit_transform(data1["Symptom_16"])
 data1["Symptom_17"] = le.fit_transform(data1["Symptom_17"])
 print("Data")
 data1
+```
+![image](https://github.com/AnnBlessy/Datathon-Project/assets/119477835/a07e40a4-0d84-4256-a659-e5e0dda036de)
 
+```
 x = data1.iloc[:,:-1]
 print("Data-status")
 x
@@ -73,7 +84,9 @@ x
 y = data1["Disease"]
 print("data-status")
 y
+```
 
+```
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
 
 lr = LogisticRegression(solver = "liblinear")
